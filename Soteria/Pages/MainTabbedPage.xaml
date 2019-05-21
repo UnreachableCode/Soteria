@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:Soteria.Pages" 
+            xmlns:effects="clr-namespace:Soteria.Effects"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="#80FFFFFF"
+            android:TabbedPage.BarSelectedItemColor="White"
+            BarBackgroundColor="#302E31"
+            x:Class="Soteria.MainTabbedPage">
+    
+    <TabbedPage.Effects>
+        <effects:NoShiftEffect />
+    </TabbedPage.Effects>
+
+        
+     <TabbedPage.Children>    
+    
+        <!--Pages can be added as references or inline-->
+       <NavigationPage Title="My Timesheets" Icon="baseline_access_time_white_24.png" BarBackgroundColor="#302E31">
+            <x:Arguments>
+                <local:TimeSheetEntryPage NavigationPage.TitleIcon="customerLogo.png" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Risks" Icon="baseline_warning_white_18.png" BarBackgroundColor="#302E31">
+            <x:Arguments>
+                <local:TimeSheetEntryPage NavigationPage.TitleIcon="customerLogo.png" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Near Misses" Icon="baseline_sentiment_very_dissatisfied_white_24.png" BarBackgroundColor="#302E31">
+            <x:Arguments>
+                <local:TimeSheetEntryPage NavigationPage.TitleIcon="customerLogo.png" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Harness" Icon="harness.png" BarBackgroundColor="#302E31">
+            <x:Arguments>
+                <local:TimeSheetEntryPage NavigationPage.TitleIcon="customerLogo.png" />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Vehicle" Icon="baseline_directions_car_white_24.png" BarBackgroundColor="#302E31">
+            <x:Arguments>
+                <local:TimeSheetEntryPage NavigationPage.TitleIcon="customerLogo.png" />
+            </x:Arguments>
+        </NavigationPage>
+     </TabbedPage.Children>
+</TabbedPage>

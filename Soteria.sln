@@ -1,0 +1,44 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soteria.Android", "Soteria.Android\Soteria.Android.csproj", "{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soteria", "Soteria\Soteria.csproj", "{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soteria.WebApi", "Soteria.WebApi\Soteria.WebApi.csproj", "{5C49171A-770B-42AD-8346-C6CF130992CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soteria.Core", "Soteria.Core\Soteria.Core.csproj", "{27EB7CE6-B2DF-448F-8B41-96C137DD6490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug (Gorilla)|Any CPU = Debug (Gorilla)|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Debug (Gorilla)|Any CPU.ActiveCfg = Debug (Gorilla)|Any CPU
+		{D0F9BB42-EB02-4FE7-9CAA-BCEF4EA0D9DB}.Debug (Gorilla)|Any CPU.Build.0 = Debug (Gorilla)|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Debug (Gorilla)|Any CPU.ActiveCfg = Debug (Gorilla)|Any CPU
+		{0F57CAA2-BDAF-4889-9CA1-78F59AF99991}.Debug (Gorilla)|Any CPU.Build.0 = Debug (Gorilla)|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Debug (Gorilla)|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C49171A-770B-42AD-8346-C6CF130992CC}.Debug (Gorilla)|Any CPU.Build.0 = Debug|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Debug (Gorilla)|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EB7CE6-B2DF-448F-8B41-96C137DD6490}.Debug (Gorilla)|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

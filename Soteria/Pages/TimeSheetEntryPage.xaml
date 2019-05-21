@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Soteria.Repositories"
+             xmlns:gridStyles ="clr-namespace:Soteria"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
+             x:Class="Soteria.Pages.TimeSheetEntryPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <gridStyles:CustomGridStyle x:Key="customStyle" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.BindingContext>
+        <local:TimeSheetEntryInfoRepository x:Name="viewModel" />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="15, 10, 15, 30">
+            
+            <Frame BorderColor="#E3E3E3" OutlineColor="#E3E3E3" Padding="0" CornerRadius="10" VerticalOptions="Fill">
+                <StackLayout BackgroundColor="#E3E3E3">
+                    <Label Text="TIMESHEET RECORD"/> 
+                    <Grid>
+                        <Label Text="SPIE Distribution  Transmission" Grid.Column="0" Grid.Row="0"/>
+                        <Label Text="I certify that the information on this sheet is correct." Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="WEEK COMMENCING SATURDAY:" Grid.Column="0" Grid.Row="1"/>
+                        <Label Text="Signature of Employee:" Grid.Column="2" Grid.Row="1"/>
+                        <Label Text="NAME:" Grid.Column="0" Grid.Row="2"/>
+                        <Label Text="Authorised by:" Grid.Column="2" Grid.Row="2"/>
+                        <Label Text="EMPLOYEE ID NO" Grid.Column="0" Grid.Row="3"/>
+                        <Label Text="CONTRACT CODE: {ContactCode}" Grid.Column="1" Grid.Row="3"/>
+                        <Label Text="Authorised Client Signature" Grid.Column="2" Grid.Row="3"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <syncfusion:SfDataGrid x:Name="dataGrid"
+                                   GridStyle="{StaticResource customStyle}"
+                                   HorizontalOptions="Fill"
+                                   VerticalOptions="Fill"
+                                   ColumnSizer="Star"  
+                                   SelectionMode="Single"    
+                                   NavigationMode="Cell" 
+                                   AutoGenerateColumns="False"
+                                   EditTapAction="OnTap"
+                                   ItemsSource="{Binding TimeSheetEntryInfoCollection}">
+                
+                <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                    <syncfusion:GridTextColumn MappingName="Day" />
+                    <syncfusion:GridTextColumn HeaderText="Date"
+                                               MappingName="Date" />
+                    <syncfusion:GridDateTimeColumn HeaderText="Start"
+                                               AllowEditing="true"
+                                               MappingName="Start" />
+                    <syncfusion:GridPickerColumn HeaderText="Finish"
+                                               AllowEditing="true"
+                                               ItemsSource="{Binding WorkingHours}"
+                                               MappingName="Finish" />
+                    <syncfusion:GridTextColumn HeaderText="Break"
+                                               AllowEditing="true"
+                                               MappingName="Break" />
+                    <syncfusion:GridTextColumn HeaderText="Hours"
+                                               AllowEditing="true"
+                                               MappingName="Hours" />
+                </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
+            
+            
+            
+            
+            
+<!--            <Grid>
+                <Label Text="Day" Grid.Column="0"/>
+                <Label Text="Date" Grid.Column="1"/>
+                <Label Text="Start" Grid.Column="2"/>
+                <Label Text="Finish" Grid.Column="3"/>
+                <Label Text="Hours" Grid.Column="4"/>
+                
+            </Grid>
+           <Grid>
+                <Label Grid.Column="0" Grid.Row="0" Text="Saturday"/>
+                <Label Grid.Column="0" Grid.Row="1" Text="Sunday" />
+                <Label Grid.Column="0" Grid.Row="2" Text="Monday" />
+                <Label Grid.Column="0" Grid.Row="3" Text="Tuesday" />
+                <Label Grid.Column="0" Grid.Row="4" Text="Wednesday" />
+                <Label Grid.Column="0" Grid.Row="5" Text="Thursday" />
+                <Label Grid.Column="0" Grid.Row="6" Text="Friday" />
+            </Grid>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
